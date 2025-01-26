@@ -102,7 +102,7 @@ public class Principal {
                 .filter(e-> e.getAvaliacao() > 0.0)
                 .collect(Collectors.groupingBy(Episodio::getTemporada,
                         Collectors.averagingDouble(Episodio::getAvaliacao)));
-        System.out.println( avalicaoPorTemporada + );
+        System.out.println( avalicaoPorTemporada  );
 
         System.out.println("\b******** RESUMO DE AVALIACAO SERIE ************\n");
         DoubleSummaryStatistics est = episodios.stream()
